@@ -1,0 +1,467 @@
+/*Mobile-first*/
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /*10px = 1rem*/
+    font-size:62.5%;
+
+
+
+/*font-family*/
+--ff: 'Mulish', sans-serif;
+
+
+/*font-color*/
+--fc-header: #B52184;
+--fc-txt: #312D64;
+
+
+/*background*/
+--bg-blue: linear-gradient(to right, #343193, #302C63 );
+--bg-white: #F9F4FB;
+
+.container {
+  
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+/*first page*/
+ .pag-one{
+    width: 43rem;
+    height: 67.9rem;
+    background: var(--bg-white);
+
+}
+
+/*Img - Astronaut*/
+.pag-one img:first-child{
+    width: 36.4rem;
+    height: 37rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/*img arrow*/
+.pag-one img:last-child{
+    width: 5.8rem;
+    height: 10.5rem;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+
+
+
+    /*heading - Pag 1*/
+}
+.pag-one h1{
+    color: var(--fc-header);
+    font-family: var(--ff);
+    height: 4rem;
+    width: 30.5rem;
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin: 1.7rem auto 0;
+}
+
+/*subheading - Page 01*/
+.pag-one h6{
+    color: var(--fc-txt);
+    font-family: "var(--ff);";
+    height: 1.4rem;
+    width: 32rem;
+    font-size:2.3rem;
+    font-weight: 400 ;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/*Page 2*/
+.pag-two{
+padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 43rem;
+    height: 124rem;
+    background: var(--bg-blue);
+}
+
+/*frame box*/
+.caixa{
+    margin:2.5rem auto;
+    border: 2px solid white;
+    border-radius: 2rem;
+   background: white;
+   width: 35rem;
+   height: 33.7rem;
+
+}
+
+/*Moon - inner box*/
+.caixa img{
+    margin: 2rem;
+    margin-left: 2rem;
+    width: 8rem;
+    height: 8rem;
+
+}
+
+/*title box*/
+.caixa h2{
+    font-family: var(--ff);
+    font-size: 2.9rem;
+    color: var(--fc-header);
+    width: 23rem;
+    height: 2rem;
+    margin-left:2rem;
+    margin-bottom: 2.3rem;
+}
+
+/*txt box*/
+
+.caixa p{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    font-family: var(--ff);
+    font-size: 1.6rem;
+    color: var(--fc-txt);
+    width: 26rem;
+    height: 13rem;
+    font-weight: 600;
+}
+
+
+/*Page 03*/
+
+.pag-three{
+    width: 43rem;
+    height: 56.5rem;
+    background: var(--bg-white);
+
+
+}
+
+.pag-three img{
+display: none;
+}
+
+/*page 03 Title*/
+.pag-three h1{
+
+    font-family: var(--ff);
+    font-size: 3.2rem;
+    color: var(--fc-header);
+   
+
+}
+
+/*Container Contact*/
+
+.container-contato{
+    display: flex;
+    gap: 2.4rem;
+    flex-direction: column;
+    width: 35.1rem;
+    height: 42.2rem;
+    margin: 7.8rem auto;
+}
+
+
+
+/*placeholder name*/
+
+.contato-nome ::placeholder{
+
+padding-left: 4rem;
+background: url('images/person.svg') no-repeat;
+background-size: 20px;
+background-position: 7px center; 
+color: var(--fc-txt);
+font-family: var(--ff);
+font-size: 1.6rem ;
+font-weight: 600;
+background-color:var(--bg-white)
+}
+
+
+/*Input name*/
+.contato-nome input{
+margin-top:3rem;
+    height: 4.8rem;
+    width: 34rem;
+    background-color: var(--bg-white);
+    border-radius: 1.6rem;
+   
+}
+
+
+/*Placeholder Email*/
+
+.contato-email ::placeholder{
+
+padding-left: 4rem;
+background: url('images/at.png') no-repeat;
+background-size: 20px;
+background-position: 7px center; 
+color: var(--fc-txt);
+font-family: var(--ff);
+font-size: 1.6rem ;
+font-weight: 600;
+background-color:var(--bg-white)
+
+}
+
+
+/*Input Email*/
+
+.contato-email input{
+
+    height: 4.8rem;
+    width: 34rem;
+    background-color: var(--bg-white);
+    border-radius: 1.6rem;
+   
+}
+
+
+/*placeholder - message*/
+.contato ::placeholder{
+padding-top: 1.6rem;
+    padding-left: 1.6rem;
+    color: var(--fc-txt);
+    font-family: var(--ff);
+    font-size: 1.6rem ;
+    font-weight: 600;
+    background-color:var(--bg-white);
+   
+    
+    }
+    /*textarea- message*/
+
+    .contato textarea{
+
+        height: 12.6rem;
+        width: 34rem;
+        background-color: var(--bg-white);
+        border-radius: 1.6rem;
+    }
+
+    /*Message Input - Button*/
+    .contato input {
+        margin-top: 2.4rem;
+        background: var(--bg-blue);
+        height: 4.5rem;
+        width: 15rem;
+        color: white;
+        font-family: var(--ff);
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 1.6rem;
+    }
+
+
+    /*footer*/
+
+    .container footer {
+        padding: 32px 16px 32px 16px;
+text-align: center;
+font-family: var(--ff);
+color: white;
+font-size: 1.9rem;
+
+
+        width: 43.6rem;
+        height: 7.8rem;
+        background:var(--bg-blue);
+       
+}
+
+
+
+@media (min-width: 500px) {
+
+
+    /*page one*/
+    
+.pag-one{
+    margin-top: -50px;
+display: flex;
+flex-direction:row-reverse;
+    width: 144rem;
+    height: 83.6rem;
+    background: var(--bg-white);
+    align-items: center;
+}
+
+/*page one - text*/
+.pag-one .text-page-one {
+  margin-left: 11rem;
+   
+}
+
+/*page one h1*/
+.pag-one .text-page-one h1{
+    margin-top: 31rem;
+    font-size: 58px;
+    width: 56rem;
+    height: 7.3rem;
+    
+}
+
+/*page one h6*/
+.pag-one .text-page-one h6{
+    font-size: 37px;
+    width: 53rem;
+    height: 2.3rem;
+    margin-left: 2px;
+text-align: left;
+}
+
+/*page one - arrow*/
+
+.pag-one img:last-child{
+ margin-left: 0;
+ margin-top: 17.9rem;
+ width: 5.9rem;
+ height: 10.5rem;
+  
+}
+
+/*page one- img astronaut*/
+.pag-one img:first-child{
+    margin: 0 auto;
+    width: 72rem;
+    height: 73.3rem;
+    margin-right: 3rem;
+    
+}
+
+
+/*page two*/
+.pag-two{
+    padding-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        width: 144rem;
+        height: 57.6rem;
+        background: var(--bg-blue);
+    }
+
+    /*box */
+    .caixa{
+      
+       width: 36.6rem;
+       height: 44.8rem;
+    
+    }
+ /*box title*/
+    .caixa h2{
+        font-size: 35.3px;
+        width: 28rem;
+        height: 2.5rem;
+    }
+
+
+    /*box txt*/
+    .caixa p{
+        margin-top: 30px ;
+        font-size:19.4px;
+        width: 32.1rem;
+        height: 15.8rem;
+
+    }
+/*inner box - moon*/
+    .caixa img{
+        
+        width: 9.7rem;
+        height: 9.7rem;}
+
+
+        /*page three*/
+        .pag-three{
+            display: flex;
+            flex-direction: row;
+            width: 144rem;
+            height: 61.2rem;
+        }
+ /*img- stars*/
+        .pag-three img{
+            display: flex;
+        }
+
+        /*page 03 - title*/
+        .pag-three h1{
+            width: 35.7rem;
+            height: 5.3rem;
+            font-size: 42px;}
+
+
+
+            /*contact - box*/
+            .container-contato{
+                margin-top:9.5rem;
+                
+                display: flex;
+                flex-direction: column;
+
+                width: 59.5rem;
+                height: 42.2rem;
+            }
+            
+            /*Input nome*/
+
+            .contato-nome input{
+                width: 59.2rem;
+                height: 4.8rem;
+
+            }
+            /*Input Email*/
+            .contato-email input{
+                width: 59.2rem;
+                height: 4.8rem;
+                
+            }
+             /*textarea- message*/
+            .contato textarea{
+                width: 59.2rem;
+                height: 12.6rem;
+                
+            }
+
+              /*footer*/
+
+    .container footer {
+   
+
+
+        width: 144rem;
+        height: 7.8rem;
+
+       
+}
+
+
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
